@@ -2,11 +2,13 @@ import GlobalStyle from "./style/GlobalStyle";
 import styled from "styled-components";
 import { imageData } from "./data/imageData";
 import PhotoCard from "./components/PhotoCard";
+import DynamicDate from "./components/DynamicDate";
 
 function App() {
   return (
     <Wrapper>
       <GlobalStyle />
+      <DynamicDate />
       {imageData.map((photo) => {
         return <PhotoCard key={photo.id} photo={photo} />;
       })}
