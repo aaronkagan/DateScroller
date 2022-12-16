@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { imageData } from "./data/imageData";
 import PhotoCard from "./components/PhotoCard";
 import DynamicDate from "./components/DynamicDate";
+import badge from "./assets/images/linkedin-badge.png";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <Footer>
         All images by <a href="https://unsplash.com/@dtolokonov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmytro Tolokonov</a>
         <p>Disclaimer: The years are to demonstrate the app's functionality and do not accurately represent the year the photo was taken</p>
+        <CreatedBy>Created By</CreatedBy>
+        <a href="https://www.linkedin.com/in/aaron-kagan/" target="_blank">
+          <Img src={badge} alt="link to Aaron Kagan's LinkedIn" />
+        </a>
       </Footer>
     </Wrapper>
   );
@@ -29,12 +34,23 @@ const Wrapper = styled.div`
 `;
 
 const Footer = styled.div`
-  margin-bottom: 20px;
+  gap: 20px;
+  padding-bottom: 150px;
   text-align: center;
   p {
     margin-top: 10px;
     padding: 0 10px;
+    width: 300px;
+    margin-bottom: 20px;
   }
+`;
+
+const CreatedBy = styled.p`
+  font-weight: bold;
+`;
+
+const Img = styled.img`
+  width: 300px;
 `;
 
 export default App;
