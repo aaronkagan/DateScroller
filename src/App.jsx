@@ -8,7 +8,6 @@ function App() {
     <Wrapper>
       <GlobalStyle />
       {imageData.map((photo) => {
-        console.log(photo);
         return <PhotoCard key={photo.id} photo={photo} />;
       })}
       <Footer>
