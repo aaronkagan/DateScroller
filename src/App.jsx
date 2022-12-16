@@ -12,6 +12,7 @@ function App() {
       })}
       <Footer>
         All images by <a href="https://unsplash.com/@dtolokonov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmytro Tolokonov</a>
+        <p>Disclaimer: The years are to demonstrate the app's functionality and do not accurately represent the year the photo was taken</p>
       </Footer>
     </Wrapper>
   );
@@ -25,6 +26,12 @@ const Wrapper = styled.div`
   margin-top: 20px;
 `;
 
-const Footer = styled.div``;
+const Footer = styled.div`
+  margin-bottom: 20px;
+  text-align: center;
+  p {
+    margin-top: 10px;
+  }
+`;
 
 export default App;
