@@ -31,6 +31,7 @@ const Footer = styled.div`
   text-align: center;
   p {
     margin-top: 10px;
+    padding: 0 10px;
   }
 `;
 
