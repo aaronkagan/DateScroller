@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --primary-color: lightgrey;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   button:active {
     transform: scale(0.95);
   }
+
 
 `;
 
