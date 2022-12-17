@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const DynamicDate = () => {
-  return <Wrapper>{"PlaceHolder"}</Wrapper>;
+const DynamicDate = ({ date }) => {
+  return <Wrapper>{date}</Wrapper>;
 };
 
 const Wrapper = styled.div`

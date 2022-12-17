@@ -4,14 +4,16 @@ import { imageData } from "./data/imageData";
 import PhotoCard from "./components/PhotoCard";
 import DynamicDate from "./components/DynamicDate";
 import badge from "./assets/images/linkedin-badge.png";
+import { useState } from "react";
 
 function App() {
+  const [date, setDate] = useState(2022);
   return (
     <Wrapper>
       <GlobalStyle />
-      <DynamicDate />
+      <DynamicDate date={date} />
       {imageData.map((photo) => {
-        return <PhotoCard key={photo.id} photo={photo} />;
+        return <PhotoCard key={photo.id} photo={photo} setDate={setDate} />;
       })}
       <Footer>
         All images by <a href="https://unsplash.com/@dtolokonov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmytro Tolokonov</a>
