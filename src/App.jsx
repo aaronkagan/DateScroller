@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { imageData } from "./data/imageData";
 import PhotoCard from "./components/PhotoCard";
 import DynamicDate from "./components/DynamicDate";
-import badge from "./assets/images/linkedin-badge.png";
+// import badge from "./assets/images/linkedin-badge.png";
 import { useState } from "react";
 
 function App() {
