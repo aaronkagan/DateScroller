@@ -21,7 +21,7 @@ const PhotoCard = ({ photo, setDate }) => {
     root: null, // Leaving the root as null will observer the target element intersecting the entire viewport
 
     // TODO : FIX THE THRESHOLDS FOR SCREEN SIZES OR USE A DIFFERENT ROOT SO THAT THE OBSERVER IS TRIGGERED WHEN THE NEW ROOT ELEMENT IS INTERSECTED
-    rootMargin: "0px 0px -800px 0px",
+    rootMargin: "0px 0px -500px 0px",
     // The percentage of intersection at which the callback is being called
     threshold: 0 // 0.1 is 10 percent. meaning that at least 10 perfect of our target is in view
   };
