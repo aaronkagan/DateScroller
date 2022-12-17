@@ -18,10 +18,6 @@ function App() {
       <Footer>
         All images by <a href="https://unsplash.com/@dtolokonov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmytro Tolokonov</a>
         <p>Disclaimer: The years are to demonstrate the app's functionality and do not accurately represent the year the photo was taken</p>
-        <CreatedBy>Created By</CreatedBy>
-        <a href="https://www.linkedin.com/in/aaron-kagan/" target="_blank">
-          <Img src={badge} alt="link to Aaron Kagan's LinkedIn" />
-        </a>
       </Footer>
     </Wrapper>
   );
